@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(49, 48, 48);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    font-size: 3vmax;
+    align-items: center;
+    padding:3vh 5vw;
+}
+.container{
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 1vh 1vw;
+}
+.first{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 5vh;
+    border-radius: 10px;
+    background-image: url(pexels-benjamin-lehman-14536020.jpg);
+    background-size: cover;
+}
+.second{
+    height: 45vh;
+    border-radius: 10px;
+    overflow: auto;
+    background-color:rgb(26, 25, 25);
+}
+.second h3{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 1vh 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: sticky;
+    top: 0;
+}
+.song{
+    background-color: black;
+    color: white;
+    padding: 2vh 1vw;
+}
+.song img{
+    height:35px;
+    width: 45px ;
+    border-radius: 5px;
+}
+.song-main{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+
+ 
+@media(min-width:700px){
+    .container{
+      flex-direction: row;
+    }
+    .first{
+        width: 50%;
+        height:70vh;
+    }
+    .second{
+        height:70vh;
+        width: 50%;
+    }
+}
+
+.active{
+    background-color: rgb(9, 67, 9);
+}
