@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .container{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    background-color: lightgray;
+    padding-top: 40px;
+}
+h1{
+    font-style: italic;
+    color: orange;
+    padding-bottom:3vh;
+    font-size: 3vmax;
+}
+.q-container{
+    background-color: wheat;
+    border-radius: 5px;
+    margin: 5vh 0;
+    padding: 2vh 2vw ;
+    width: 50vw;
+    /* line-height: 1.3; */
+    box-shadow: 3px 5px 5px rgb(12, 12, 12,0.5);
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+.ques{
+    font-size: 2vmax;
+}
+i{
+    color: orange;
+    /* padding-left: 20px ; */
+    /* text-align: right; */
+    cursor: pointer;
+    font-size: 2vmax;
+}
+.answer{
+    display: none;
+    font-size:1.5vmax;
+    padding-top: 10px ;
+    border-top: 1px dotted black;
+}
+.hide .answer{
+    display: block;
+}
+.hide .minus{
+    display: block;
+}
+.hide .plus{
+    display: none;
+}
+.minus{
+    display: none;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Honest Qestions</h1>
+        <div class="questions">
+            <div class="q-container">
+                <div class="question">
+                    <p class="ques">IS Salman Khan gay?</p>
+                    <i class="fa-regular fa-square-plus plus"></i>
+                    <i class="fa-regular fa-square-minus minus"></i>
+                </div>
+                <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dicta saepe error, laborum at iste deserunt fugiat molestias illo aspernatur.</p>
+            </div>
+            <div class="q-container">
+                <div class="question">
+                    <p class="ques">Do Doreamon likes Sizuca?</p>
+                    <i class="fa-regular fa-square-plus plus"></i>
+                    <i class="fa-regular fa-square-minus minus"></i>
+                </div>
+                <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dicta saepe error, laborum at iste deserunt fugiat molestias illo aspernatur.</p>
+            </div>
+            <div class="q-container">
+                <div class="question">
+                    <p class="ques">Is Nobita a stupid boy?</p>
+                    <i class="fa-regular fa-square-plus plus"></i>
+                    <i class="fa-regular fa-square-minus minus"></i>
+                </div>
+                <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dicta saepe error, laborum at iste deserunt fugiat molestias illo aspernatur.</p>
+            </div>
+            <div class="q-container">
+                <div class="question">
+                    <p class="ques">Is Sinchan the worst cartoon?</p>
+                    <i class="fa-regular fa-square-plus plus"></i>
+                    <i class="fa-regular fa-square-minus minus"></i>
+                </div>
+                <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dicta saepe error, laborum at iste deserunt fugiat molestias illo aspernatur.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

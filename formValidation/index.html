@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class="name input-container">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your name">
+            <span>Enter full name</span>
+        </div>
+        <div class="number input-container">
+            <label for="contactNum">Contact no</label>
+            <input type="number" id="contactNum" placeholder="123 456 789 0">
+            <span>Invalid number</span>
+        </div>
+        <div class="email input-container">
+            <label for="email">Email id</label>
+            <input type="email" id="email" placeholder="Enter email">
+            <span>Invalid Email</span>
+        </div>
+        <div class="message input-container">
+            <label for="Message">Your message</label><br>
+            <textarea id="Message" cols="30" rows="5" placeholder="message"></textarea>
+            <!-- <span>30 character remaining</span> -->
+        </div>
+        <button type="submit">submit</button>
+        <p>an error occured</p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

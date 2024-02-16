@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-image: url(https://images.pexels.com/photos/186980/pexels-photo-186980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center;
+
+}
+h1{
+    font-size: 2.5vmax;
+}
+.box{
+    box-shadow: 5px 5px 5px black;
+    /* height: 70vh; */
+    width: 50vw;
+    text-align: center;
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255,0.3);
+    padding: 5vh 0;
+}
+button{
+    color: white;
+    background-color: blue;
+    padding: 0.4rem 0.8rem ;
+    font-style: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 3vh 0;
+    font-size: 1vmax;
+}
+input{
+    width: 16vw;
+    height: 5vh;
+    font-size: 1.1vmax;
+    border-radius: 5px;
+    padding: 0.3rem;
+    margin: 3vh 0;
+    /* margin-top: 2vh; */
+}
+img{
+    width: 5vw;
+}
+.weather,.tempreture{
+    font-size: 2.1vmax;
+}
+span{
+    background-color:rgb(40, 40, 40);
+    color: white;
+    font-size: 1.6vmax;
+    padding: 10px;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    margin-top: 5vh;
+}
+/* responsive design */
+@media(max-width:425px){
+    button{
+        padding: 0.2rem 0.3rem ;
+        font-size: 1.5vmin;
+    }
+    input{
+        font-size: 2vmin;
+    }
+}

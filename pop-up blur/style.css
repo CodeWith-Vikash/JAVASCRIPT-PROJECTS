@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: black;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    position: relative;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 5vh;
+    font-size: 3vmax;
+    height: 100vh;
+    padding-top: 30vh;
+    width: 100vw;
+    background: linear-gradient(to top right,blue,rgb(239, 61, 91),crimson);
+    transition: filter 0.5s;
+}
+button{
+    font-size: 4vmax;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 30vh;
+    background-color:white;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-500%);
+    transition:all 0.5s;
+    padding: 0 2vw;
+    opacity: 0;
+    /* padding-top: 10vh; */
+    gap: 2vh;
+}
+input{
+    height: 5vh;
+}
+i{
+    text-align: right;
+    padding: 2vh 2vw;
+    font-size: 4vmax;
+    margin-bottom: 3vh;
+    color: red;
+}
+.remove .card{
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    /* visibility: hidden; */
+    transition: all 0.5s;
+}
+.remove .main{
+    filter: blur(5px) brightness(0.7);
+}
+
+@media(min-width:700px){
+    .main{
+        font-size: 2vmax;
+    }
+    button{
+        font-size: 2vmax;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        height: 35vh;
+        gap: 2vh;
+        padding: 0 1vw;
+    }
+    i{
+        padding: 3vh 1vw;
+        font-size: 2vmax;
+    }
+}

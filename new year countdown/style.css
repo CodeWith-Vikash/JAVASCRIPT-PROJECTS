@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    font-family: cursive;
+}
+.container{
+    height: 100vh;
+    background-color: rgb(162, 67, 250);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+.time{
+    background-color: rgb(16, 16, 16,0.2);
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    padding: 5vh;
+}
+h3{
+    font-size: 4vmax;
+}
+strong{
+    font-size: 8vmax;
+}
+h4{
+    font-size: 4vmax;
+}
+span{
+    font-size: 2vmax;
+}

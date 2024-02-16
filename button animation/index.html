@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaxing</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background:linear-gradient(to bottom,pink,crimson);
+    }
+    button{
+        border: none;
+        border-radius: 5px;
+        background-color:white;
+        font-size: 2rem;
+        padding: 5vh 10vw;
+        color: black;
+        position: relative;
+        overflow: hidden;
+    }
+    button::before{
+        transition: height 0.5s,width 0.5s;
+        content: "";
+        position: absolute;
+        background-color: orangered;
+        height: 0px;
+        width: 0px;
+        top:var(--yposition);
+        left:var(--xposition);
+        transform: translate(-50%,-50%);
+        border-radius: 50%;
+    }
+    button:hover::before{
+        height: 100vh;
+        width: 100vw;
+    }
+    span{
+        position: relative;
+        z-index: 1;
+    }
+</style>
+<body>
+    <button><span>Hover</span></button>
+</body>
+<script src="script.js"></script>
+</html>

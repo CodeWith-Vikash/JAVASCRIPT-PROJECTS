@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+}
+body{
+background-color:rgb(235, 46, 84);
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+padding-top: 20vh;
+}
+h1{
+    text-align: center;
+    font-size: 8vmin;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content:center ;
+}
+
+.box div{
+    height: 20vh;
+    width: 40vw;
+    background-color: rgb(108, 80, 86);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vmax;
+    color: crimson;
+}
+.box{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-column-gap: 3vw;
+    margin: 5vh 0;
+    height: 50vh;
+}
+i{
+    color: white;
+    font-size: 6vmax;
+}
+.item{
+    background-size: cover;
+}
+.item1{
+    background-image: url(crash.png);
+}
+.item2{
+    background-image: url(kick.png);
+    /* background-position: center; */
+}
+.item3{
+    background-image: url(snare.png);
+    /* background-position: c; */
+}
+.item4{
+    background-image: url(tom.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media(min-width:500px){
+    .box{
+        grid-template-columns:repeat(4,1fr);
+    }
+    .box div{
+        width: 15vw;
+        height: 20vh;
+        font-size:3vmax ;
+        font-family: cursive;
+    }
+    body{
+        padding-top: 30vh;
+    }
+    h1{
+        font-size: 6vmax;
+    }
+}

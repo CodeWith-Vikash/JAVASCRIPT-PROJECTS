@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+.box{
+    text-align: center;
+    line-height: 3;
+    margin-top: 10vh;
+}
+button{
+    color: white;
+    background-color: blue;
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    width: 6vw;
+    margin-top: 5vh;
+}
+.history-container{
+    margin: 10vh 0;
+}
+.history{
+    background-color: rgb(179, 178, 178);
+    height: 6vh;
+    width: 20vw;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1vmax;
+    font-weight: bold;
+    padding: 0 1vw;
+    border-radius: 10px;
+}
+.dice i{
+    font-size: 4vmax;
+}
+.dice{
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+/* for rolling the dice */
+.dice-animation{
+    animation-name: roll;
+}
+@keyframes roll{
+    0%{
+        transform:rotateX(0deg) rotateY(0deg);
+    }
+    100%{
+        transform:rotateX(720deg) rotateY(720deg);
+    }
+}

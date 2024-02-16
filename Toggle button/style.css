@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s
+}
+button{
+    height: 7vh;
+    width: 20vw;
+    border-radius: 20px;
+    border: none;
+    background-color: gray;
+    cursor: pointer;
+}
+.circle{
+    background-color:white;
+    height: 5vh;
+    width: 6vw;
+    border-radius: 50%;
+    /* transform: translateX(12vw); */
+    transition: 0.5s;
+}
+@media(min-width:425px){
+    button{
+        height: 8vh;
+        width: 10vw;
+    }
+    .circle{
+        height: 6vh;
+        width: 3vw;
+    }
+}
