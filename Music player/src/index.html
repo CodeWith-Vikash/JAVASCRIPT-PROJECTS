@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="h-screen w-full bg-slate-800 text-white relative">
+    <nav class="bg-black font-bold flex justify-between items-center" style="padding:3vh 5vw;">
+        <h1 style="color:rgb(254, 62, 126);font-family: cursive;text-shadow:-2px 2px 10px;font-size: 3vmax;">Highbeats</h1>
+        <i class="fa-solid fa-music" style="color:rgb(254, 62, 126) ;text-shadow:-2px 2px 10px;font-size: 3vmax;"></i>
+    </nav>
+    <div class="container h-[90vh] pb-0 pt-2">
+        <div class="first bg-blue-600 h-[45%] rounded-lg mx-2 bg-[url(https://tse4.mm.bing.net/th?id=OIP.n7F-rZLHkJ9u2bW2WZSpOgHaFj&pid=Api&P=0&h=220)] bg-no-repeat bg-cover bg-center flex justify-center pt-2">
+            <audio controls style="opacity:0.8;">
+                <source id="audio" src="">
+            </audio>
+        </div>
+        <div class="second bg-slate-500 h-1/2 rounded-lg mx-2 mt-2 overflow-auto">
+            <h3 class="text-white text-xl font-bold text-center p-2 sticky top-0 bg-blue-600 mb-1">Playlist</h3>
+            <div class="songs"></div>
+        </div>
+    </div>
+    <!-- <footer class="bg-black text-white text-[2vmax] p-4 flex justify-center items-center gap-4 absolute bottom-0">
+        <i class="fa-solid fa-circle-left cursor-pointer hover:text-gray-800"></i>
+        <i class="fa-solid fa-circle-play cursor-pointer hover:text-gray-800"></i>
+        <i class="fa-solid fa-circle-right cursor-pointer hover:text-gray-800"></i>
+        copyrightreserved@CodeWith-Vikash
+    </footer> -->
+    <script src="script.js"></script>
+</body>
+</html>
