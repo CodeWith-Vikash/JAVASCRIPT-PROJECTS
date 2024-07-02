@@ -49,3 +49,14 @@ button{
     font-size: 1rem;
     cursor: pointer;
 }
+.active{
+    background-color: rgb(243, 6, 45);
+}
+.final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10vh;
+}
