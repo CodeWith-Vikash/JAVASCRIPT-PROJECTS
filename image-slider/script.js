@@ -30,7 +30,7 @@ prebtn.addEventListener('click',()=>{
             currentImage=1
         }
         imageContainer.style.transform=`translateX(-${(currentImage-1)*100}%)`
-        console.log("currenimage= "+currentImage);
-        console.log("imgelenth="+images.length);
+        // console.log("currenimage= "+currentImage);
+        // console.log("imgelenth="+images.length);
     }
 
